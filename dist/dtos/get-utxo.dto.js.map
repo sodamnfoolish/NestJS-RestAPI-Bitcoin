@@ -1,0 +1,1 @@
+{"version":3,"file":"get-utxo.dto.js","sourceRoot":"","sources":["../../src/dtos/get-utxo.dto.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,6CAA8C;AAC9C,qDAAuD;AACvD,2FAA4E;AAE5E,MAAa,UAAU;CAUtB;AADC;IARC,IAAA,4BAAU,GAAE;IACZ,IAAA,0BAAQ,GAAE;IACV,IAAA,6CAAe,GAAE;IACjB,IAAA,qBAAW,EAAC;QACX,QAAQ,EAAE,IAAI;QACd,OAAO,EAAE,oCAAoC;QAC7C,WAAW,EAAE,SAAS;KACvB,CAAC;;2CACc;AATlB,gCAUC"}

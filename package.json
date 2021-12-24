@@ -26,9 +26,9 @@
     "update:packages": "node wipe-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save"
   },
   "dependencies": {
-    "@nestjs/common": "^8.0.0",
+    "@nestjs/common": "^8.2.4",
     "@nestjs/config": "^1.0.3",
-    "@nestjs/core": "^8.0.0",
+    "@nestjs/core": "^8.2.4",
     "@nestjs/platform-express": "^8.0.0",
     "@nestjs/swagger": "^5.1.4",
     "bip32": "^2.0.6",
@@ -41,7 +41,7 @@
     "joi": "^17.4.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.2.0",
+    "rxjs": "^7.4.0",
     "swagger-ui-express": "^4.1.6",
     "wallet-address-validator": "^0.2.4"
   },
