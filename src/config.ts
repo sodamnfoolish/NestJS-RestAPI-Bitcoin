@@ -1,6 +1,8 @@
 import * as dotenv from 'dotenv';
-dotenv.config();
 import * as env from 'env-var';
+
+dotenv.config();
+
 export const NETWORK: string = env.get('NETWORK').required(true).asString();
 export const PORT: number = env.get('PORT').required(true).asInt();
 export const FEE_PER_BYTE: number = env.get('FEE_PER_BYTE').required(true).asInt();

@@ -2,6 +2,7 @@ import { ApiProperty } from '@nestjs/swagger';
 import { NETWORK } from "../config";
 
 export class HeightDto {
+
   @ApiProperty({
     required: true,
     example: 2101816,
@@ -11,4 +12,5 @@ export class HeightDto {
   constructor(height: number) {
     this.height = height;
   }
+  
 }

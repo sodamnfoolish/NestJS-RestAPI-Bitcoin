@@ -6,6 +6,7 @@ import * as wav from 'wallet-address-validator';
 export class WalletAddressValidator implements ValidatorConstraintInterface {
   validate(address: string, args: ValidationArguments) {
     if (address == undefined || address == null || typeof address != 'string') return false; // пришлось добавить эту исключение, т.к. stopAtFirstError работает некорректно в ValidationPipe
+
     return wav.validate(address, 'BTC', NETWORK);
   }
 }

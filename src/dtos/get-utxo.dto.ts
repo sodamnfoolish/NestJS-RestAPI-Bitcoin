@@ -3,6 +3,7 @@ import { IsNotEmpty, IsString } from 'class-validator';
 import { IsWalletAddress } from '../decorators/is-wallet-address.decorator';
 
 export class GetUtxoDto {
+
   @IsNotEmpty()
   @IsString()
   @IsWalletAddress()
@@ -12,4 +13,5 @@ export class GetUtxoDto {
     description: 'address',
   })
   address: string;
+  
 }

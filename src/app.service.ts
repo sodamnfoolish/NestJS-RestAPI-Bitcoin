@@ -6,6 +6,7 @@ import { NETWORK, FEE_PER_BYTE, BYTES_PER_IN, BYTES_PER_OUT, CONST_BYTES } from 
 
 @Injectable()
 export class AppService {
+
   async getHeight(): Promise<number> {
     const url = `https://api.bitcore.io/api/BTC/${NETWORK}/block/tip`;
     let response;
@@ -116,9 +117,12 @@ export class AppService {
       return tx.toHex();
     }
   }
+
 }
 
 /*
+testnet wallets
+
 addr mktfwcgbQUgPsHxkJt6BSqhaCopJXBG9et
 wif cUrnQ6qZL7pXxAb98QjwSyghY6xqvk2aevb8DvNzMMk42543WpVU
 

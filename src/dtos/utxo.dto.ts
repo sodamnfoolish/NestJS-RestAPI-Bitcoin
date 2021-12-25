@@ -1,6 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 
 export class UtxoDto {
+  
   @ApiProperty({
     required: true,
     example: '499804075c59befe501c29ec60747c54802396b5a64bd0d81e6cb471787b5a80',

@@ -3,6 +3,7 @@ import { IsNumber, IsNotEmpty, IsOptional, IsString, Min } from 'class-validator
 import { IsWalletAddress } from '../decorators/is-wallet-address.decorator';
 
 export class CreateTxDto {
+  
   @IsNotEmpty()
   @IsString()
   @IsWalletAddress()
@@ -11,6 +12,7 @@ export class CreateTxDto {
     example: 'mktfwcgbQUgPsHxkJt6BSqhaCopJXBG9et',
     description: 'address from',
   })
+
   addressFrom: string;
 
   @IsOptional()
@@ -20,6 +22,7 @@ export class CreateTxDto {
     example: 'cUrnQ6qZL7pXxAb98QjwSyghY6xqvk2aevb8DvNzMMk42543WpVU',
     description: 'WIF address from',
   })
+
   addressFromWif?: string;
 
   @IsNotEmpty()
@@ -30,6 +33,7 @@ export class CreateTxDto {
     example: 'n1ufspXJwafVPxyHgYbTCdDq3S74m9zTV1',
     description: 'address to',
   })
+
   addressTo: string;
 
   @IsNotEmpty()
@@ -40,5 +44,6 @@ export class CreateTxDto {
     example: 1000,
     description: 'amount (value in satoshis)',
   })
+
   amount: number;
 }

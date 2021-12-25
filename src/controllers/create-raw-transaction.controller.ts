@@ -7,7 +7,9 @@ import { AppService } from '../app.service';
 @ApiTags('Requests')
 @Controller('create-raw-transaction')
 export class CreateRawTransactionController {
+
   constructor(private appService: AppService) {}
+
   @Post()
   @ApiBody({ type: CreateTxDto, description: 'CreateTxDto'})
   @ApiResponse({ type: TxDto, description: 'Created', status: HttpStatus.CREATED })
@@ -15,6 +17,9 @@ export class CreateRawTransactionController {
   @ApiResponse({ description: 'Service Unavailable', status: HttpStatus.SERVICE_UNAVAILABLE })
   @UsePipes(new ValidationPipe({ transform: true, disableErrorMessages: true, stopAtFirstError: true, whitelist: true, forbidNonWhitelisted: true }))
   async CreateRawTransaction(@Body() createTx: CreateTxDto): Promise<TxDto> {
+
     return new TxDto(await this.appService.createRawTransaction(createTx));
+
   }
+
 }
